@@ -26,7 +26,7 @@ $manifest = array(
     'name'=>'SugarCRM Add-on Boilerplate',
     'published_date' => '2015-04-20',
     'type' => 'module',
-    'version' => '0.000001',
+    'version' => '0.0000001',
     'remove_tables' => 'prompt',
 );
 
