@@ -1,0 +1,84 @@
+
+{{> setup.header }}
+
+<div class="setup-body">
+    <div class="setup-processing tcenter verticalspace">
+        Please be patient as we check to ensure that the Scheduler has been set up.
+    </div>
+
+    <div class="setup-ondemand hide">
+        <p>Great! You are using SugarCRM On-Demand so everything is good to go.</p>
+
+        <p>
+            Let's move on to some miscellaneous configurations
+        </p>
+        
+        <div class="button-footer pull-right">
+            <button class="previousStep btn-link">Previous</button>
+            <button class="nextStep btn btn-success">Next</button>
+        </div>
+        <div class="clearfix"></div> 
+    </div>
+    
+    <div class="setup-success hide">
+        <p>Great! It looks like you have been able to set up the Scheduler in the past.</p>
+        
+        <p>To ensure that the sync will run please double check the instructions below.</p>
+        
+        
+        <div class="button-footer pull-right">
+            <button class="previousStep btn-link">Previous</button>
+            <button class="nextStep btn btn-success">Next</button>
+        </div>
+        <div class="clearfix"></div> 
+    </div>
+    
+    <div class="setup-fail hide">
+        <p>
+            We noticed that the SugarCRM Scheduler has never ran.
+            If you haven't already, please follow the steps below to set up the Scheduler.
+            This is how we will be able to run the integration.
+            Once you are done click on the "Next" button.
+        </p>
+        
+        <div class="button-footer pull-right">
+            <button class="previousStep btn-link">Previous</button>
+            <button class="nextStep btn btn-success">Next</button>
+        </div>
+        <div class="clearfix"></div> 
+    </div>
+
+    <div id="scheduler-setup-windows" class="listViewBody hide">
+        <br>
+        <table cellpadding="0" cellspacing="0" width="100%" border="0" class="list view">
+            <tr height="20">
+                <th><slot>{{str "LBL_CRON_INSTRUCTIONS_WINDOWS" "Schedulers"}}</slot></th>
+            </tr>
+            <tr class="evenListRowS1">
+                <td scope="row" valign="top" width="70%"><slot>{{str "LBL_CRON_WINDOWS_DESC" "Schedulers"}}<br>
+                    <b>cd <span class="scheduler-realpath"></span><br>
+                    php.exe -f cron.php</b>
+                </slot></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="scheduler-setup-linux" class="listViewBody hide">
+        <br>
+        <table cellpadding="0" cellspacing="0" width="100%" border="0" class="list view">
+            <tr height="20">
+                <th><slot>{{str "LBL_CRON_INSTRUCTIONS_LINUX" "Schedulers"}}</slot></th>
+            </tr>
+            <tr>
+                <td scope="row" valign=TOP class="oddListRowS1" bgcolor="#fdfdfd" width="70%"><slot>
+                    {{str "LBL_CRON_LINUX_DESC" "Schedulers"}}<br>
+                    <b>*&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;
+                    cd <span class="scheduler-realpath"></span>; php -f cron.php > /dev/null 2>&1</b>
+                    <br>
+                </slot></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+{{> setup.footer }}

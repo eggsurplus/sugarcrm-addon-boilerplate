@@ -1,0 +1,23 @@
+
+{{> setup.header }}
+
+<div class="setup-body tcenter">
+    <div id="apikey-group" class="row-fluid control-group verticalspace">
+        <div class="control-label span3">
+            <label for="apikey">Your Integration's API Key:</label>
+        </div>
+        <div class="controls span8 input-append">
+            <input type="text" id="apikey" class="span8" style="float: left" />
+            <button class="testLogin btn btn-primary span4 pull-right" title="Connect to App">Connect to App</button>
+            <span class="help-block pull-left hide">{{str "ERR_NO_APIKEY" "AddonBoilerplate"}}</span>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="tleft">
+        <h3>Need help?</h3>
+        <p>Here is a place to offer users some <a href="http://www.example.com" target="_blank">additional help</a>.</p>
+    </div>
+</div>
+
+{{> setup.footer }}

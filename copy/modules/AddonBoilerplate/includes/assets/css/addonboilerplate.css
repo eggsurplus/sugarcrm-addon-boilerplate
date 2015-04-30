@@ -1,0 +1,176 @@
+
+/* Bring back the original Bootstrap classes...*/
+.addonboilerplate-setup .btn-large {
+    font-size: 16px;
+}
+.addonboilerplate-setup .btn-success:hover, .addonboilerplate-setup .btn-success:active, .addonboilerplate-setup .btn-success.active, .addonboilerplate-setup .btn-success.disabled, .addonboilerplate-setup .btn-success[disabled] {
+    color: #fff;
+    background-color: #35830e;
+    *background-color: #2c6c0b;
+}
+.addonboilerplate-setup .btn-success:active, .addonboilerplate-setup .btn-success.active {
+    background-color: #225509 \9 !important;
+}
+/* end Bootstrap */
+.addonboilerplate-setup {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    width: 100%;
+}
+.addonboilerplate-setup .btn-xlarge {
+    font-size: 16px;
+    padding: 24px 32px;
+}
+.addonboilerplate-setup .btn-oauth {
+    margin: 140px 0;
+}
+.addonboilerplate-setup .verticalspace {
+    margin: 80px 0;
+}
+.addonboilerplate-setup .control-group .input-append .help-block.pull-left {
+    margin-left: 6px;
+}
+.addonboilerplate-setup .link-with-button {
+    line-height: 38px;
+}
+.addonboilerplate-setup .sync-list-table th.center {
+    text-align: center !important;
+}
+.addonboilerplate-setup .sync-list-table td.center {
+    text-align: center !important;
+}
+.addonboilerplate-setup .sync-list-table select {
+    margin-bottom: 0;
+}
+.addonboilerplate-setup .button-footer {
+    margin-top: 20px;
+}
+.addonboilerplate-setup .width-inherit {
+    width: inherit !important;
+}
+.addonboilerplate-setup .howtoListToggle {
+    margin-left: 20px;
+}
+.addonboilerplate-setup option[disabled="disabled"] {
+    background-color: #eeeeee;
+}
+#content {
+    background-color: #bbbbbb;
+}
+.addonboilerplate-setup .nav-success {
+    color: #343433;
+    background-color: #efefef;
+    text-align: left;
+    padding: 8px 20px;
+}
+.addonboilerplate-setup .main-panel {
+    width: 80%;
+    max-width: 760px;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 20px auto;
+}
+.addonboilerplate-setup .content-panel {
+    margin-bottom: 10px;
+}
+.addonboilerplate-setup .setup-steps {
+    display: table;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+.addonboilerplate-setup .setup-steps li {
+    display: table-cell;
+}
+.addonboilerplate-setup .setup-steps a  {
+    padding:  12px 12px 10px 12px;
+    margin-right: 5px;
+    text-align: left;
+    background: #efefef;
+    position: relative;
+    /* display: inline-block; */
+    display: table-cell;
+ }
+.addonboilerplate-setup .setup-steps a:before  {
+    width: 0px;
+    height: 0px;
+    border-top:  20px inset transparent;
+    border-bottom:  20px inset transparent;
+    border-left:  20px solid #fff;
+    position:  absolute;
+    content:  "";
+    top:  0;
+    left:  0;
+}
+.addonboilerplate-setup .setup-steps a:after  {
+    width: 0px;
+    height: 0px;
+    border-top:  20px inset transparent;
+    border-bottom:  20px inset transparent;
+    border-left:  20px solid #efefef;
+    position:  absolute;
+    content:  "";
+    top:  0;
+    right:  -20px;
+    z-index: 2;
+}
+.addonboilerplate-setup .setup-steps a:first-child:before
+,.addonboilerplate-setup .setup-steps a:last-child:after {
+    border: none;
+}
+.addonboilerplate-setup .setup-steps a:first-child  {
+    -moz-border-radius:  4px 0 0 4px;
+    -webkit-border-radius:  4px 0 0 4px;
+    border-radius:    4px 0 0 4px;
+}
+.addonboilerplate-setup .setup-steps a:last-child  {
+    -moz-border-radius:  0 4px 4px 0;
+    -webkit-border-radius:  0 4px 4px 0;
+    border-radius:    0 4px 4px 0;
+}
+.addonboilerplate-setup .setup-steps .badge  {
+    margin: 0 5px 0 18px;
+    position: relative;
+    top: -1px;
+}
+
+.addonboilerplate-setup .setup-steps a:first-child .badge  {
+    margin-left: 0;
+}
+
+.addonboilerplate-setup .setup-steps .current  {
+    background: #007ACC;
+    color: #fff;
+}
+.addonboilerplate-setup .setup-steps .current:after  {
+    border-left-color: #007ACC;
+}
+.addonboilerplate-setup .setup-body {
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.addonboilerplate-setup .listViewBody .list {
+    border: 1px solid #AFAFAE !important;
+}
+.addonboilerplate-setup .listViewBody .list tr th {
+    color: #666;
+    font-size: 13px;
+    text-align: left;
+    padding: 6px 5px 6px 10px;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    background: #ebebed !important;
+}
+.addonboilerplate-setup .listViewBody .list tr td {
+    color: #222;
+    font-size: 13px;
+    text-align: left;
+    padding: 6px 8px 6px 10px;
+    background-color: #f6f6f6;
+}
+.addonboilerplate-setup .subscribers {
+    margin-left: 44px;
+}
