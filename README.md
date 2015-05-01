@@ -17,4 +17,4 @@ Want something else added? Either do a pull request or [make a request](https://
 
 # Trying It Out
 
-If you just want to see how it works just install it by using the Module Loader.
+If you just want to see how it works just install it by using the Module Loader. To try out the License Key validation just use this key: 46025036c925475ef44398de9204482d
